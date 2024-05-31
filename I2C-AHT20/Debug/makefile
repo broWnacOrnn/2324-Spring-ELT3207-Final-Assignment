@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (12.3.rel1)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -60,8 +60,8 @@ all: main-build
 main-build: I2C-AHT20.elf secondary-outputs
 
 # Tool invocations
-I2C-AHT20.elf I2C-AHT20.map: $(OBJS) $(USER_OBJS) C:\STM32CubeMX\projects\I2C-AHT20\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "I2C-AHT20.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\STM32CubeMX\projects\I2C-AHT20\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C-AHT20.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+I2C-AHT20.elf I2C-AHT20.map: $(OBJS) $(USER_OBJS) D:\Projects_workspace\stm32_workspace\assigment\2324-Spring-ELT3207-Final-Assignment-LabVIEW\I2C-AHT20\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "I2C-AHT20.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Projects_workspace\stm32_workspace\assigment\2324-Spring-ELT3207-Final-Assignment-LabVIEW\I2C-AHT20\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C-AHT20.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
